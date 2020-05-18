@@ -20,3 +20,20 @@ for i in range(0,len(l)):
                         liste2.append(y)
 aff(liste,liste2)
 print("______________")
+
+
+def add(liste, liste1, l):
+    for i in range(0, len(l)):
+        x = l[i][0]
+        y = l[i][1]
+        t = 1
+        for j in range(0, len(liste)):
+            if (liste[j] == x):
+                liste2[j] = liste2[j] + y
+                j = len(liste)
+                t = 0
+        if (t == 1):
+            liste.append(x)
+            liste2.append(y)
+    aff(liste, liste2)
+    print("______________")
